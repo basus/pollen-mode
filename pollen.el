@@ -24,7 +24,7 @@ For other licenses and consulting, please contact the author.")
 (setq pollen-tag-name-regexp "\\(◊[[:alnum:]]+\\)")
 (setq pollen-attr-key-regexp "\\(['\|`][[:alnum:]]+\\):")
 (setq pollen-attr-string-regexp "\\[\.*\\(\".+\"\\)\\]")
-(setq pollen-lang-regexp "#\.+$")
+(setq pollen-lang-regexp "^#\.+$")
 
 (setq pollen-font-lock-defaults
       `((,pollen-tag-name-regexp . (1 font-lock-function-name-face))
