@@ -19,6 +19,9 @@ Then add the following to `~/.emacs.d/init.el`:
 	(add-to-list 'load-path (expand-file-name "lisp/pollen-mode" user-emacs-directory))
     (autoload 'pollen-mode "pollen" "A major mode for the pollen preprocessor." t)
 	(add-to-list 'auto-mode-alist '("\\.pp\\'" . pollen-mode))
+	(add-to-list 'auto-mode-alist '("\\.pmd\\'" . pollen-mode))
+	(add-to-list 'auto-mode-alist '("\\.pm\\'" . pollen-mode))
+	(add-to-list 'auto-mode-alist '("\\.ptree\\'" . pollen-mode))
 
 Restart emacs. `pollen-mode` should activate when you open a file with
 a `.pp` extension.
