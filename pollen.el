@@ -60,7 +60,10 @@ For other licenses and consulting, please contact the author.")
 (mapc (lambda (pair)
         (or (assoc (car pair) auto-mode-alist)
             (push pair auto-mode-alist)))
-      '(("\\.pm$\\'" . pollen-mode)))
-
+      '(("\\.p$'"     . pollen-mode)
+        ("\\.pp$'"    . pollen-mode)
+        ("\\.pm$"     . pollen-mode)
+        ("\\.pmd$"    . pollen-mode)
+        ("\\.ptree$"  . pollen-mode)))
 
 (provide 'pollen)
