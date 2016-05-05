@@ -21,8 +21,8 @@ For other licenses and consulting, please contact the author.")
 ;; Syntax highlighting for Pollen Markup Mode
 (defvar pollen-font-lock-defaults nil "Font lock defaults for Pollen mode.")
 
-(setq pollen-tag-name-regexp "\\(◊[[:alnum:]]+\\)")
-(setq pollen-attr-key-regexp "\\(['\|`][[:alnum:]]+\\):")
+(setq pollen-tag-name-regexp "\\(◊[[:alnum:]]+\\(\-[[:alnum:]]+\\)*\\)")
+(setq pollen-attr-key-regexp "\\(['\|`][[:alnum:]]+\\(\-[[:alnum:]]+\\)*\\):")
 (setq pollen-attr-string-regexp "\\[\.*\\(\".+\"\\)\\]")
 (setq pollen-lang-regexp "^#\.+$")
 
